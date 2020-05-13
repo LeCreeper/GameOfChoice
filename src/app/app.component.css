@@ -1,0 +1,27 @@
+
+
+.header {
+    background-color: lightgrey;
+    background-image: url(../assets/banner2.png);
+    
+    
+    background-position: center;
+    background-size: 300vh;
+    
+    width: auto;
+    height: fit-content;
+    border-bottom: 2px solid black;
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+
+    
+
+
+

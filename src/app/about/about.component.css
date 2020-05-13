@@ -1,0 +1,39 @@
+.panel {
+    margin-top: 50px;
+    text-align: center;
+    background-image: url(../../assets/parchmentAbout.jpg);
+    background-position: center;
+    border: 2px solid ;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    
+}
+
+
+
+.panel p, h3 {
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    font-family: fantasy;
+    font-family: 'Indie Flower', cursive;
+    
+    
+}
+
+button{
+    text-transform: capitalize;
+    border: 2px solid black;
+    border-style: ridge;
+    background-color: rgba(217, 188, 154, 0.623);
+    border-radius: 200px;
+    font-family: 'Handlee', cursive;
+    
+}
+
+button:hover {
+    color: darkred;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid darkred;
+    
+}

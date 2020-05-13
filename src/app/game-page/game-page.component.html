@@ -1,0 +1,85 @@
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col"></div>
+
+        <div class="col panel">
+          
+          
+
+          <div>
+            
+          <div>
+            <!--Title of the page-->
+            <div *ngIf = "!((currentPage.victory)); else victory">
+              <div *ngIf="!((currentPage.ending)); else endingTitle">
+                <h2>{{currentPage.pageTitle}}</h2>
+              </div>
+            </div>
+            <a class="material-icons" routerLink="/">highlight_off</a>
+          </div>
+          <!-- Description of the page-->
+          <div >
+            <p >{{currentPage.pageDescription}}</p>
+          </div>
+
+          <ng-template #endingTitle>
+            <h2 class="deathTitle" >You Died!</h2>
+          </ng-template>
+
+          <ng-template #victory>
+            <h2 class="victoryTitle">You Win!</h2>
+          </ng-template>
+
+         <!--  <ng-template #endingText>
+            <p class="ending">{{currentPage.pageDescription}}</p>
+          </ng-template> -->
+
+          
+          <div class="choiceBox" >
+              
+              <div *ngIf="!((currentPage.ending)); else gameOver">
+                <div *ngIf="!((currentPage.result)); else resultPage">
+                    <button (click)="setCurrentPage((currentPage.buttonData[0].buttonDestinationPage))">{{currentPage.buttonData[0].buttonDescription}}</button>
+                    <button (click)="setCurrentPage((currentPage.buttonData[1].buttonDestinationPage))">{{currentPage.buttonData[1].buttonDescription}}</button>
+                    <button (click)="setCurrentPage((currentPage.buttonData[2].buttonDestinationPage))">{{currentPage.buttonData[2].buttonDescription}}</button>
+                </div>
+                
+
+              </div>
+
+              <ng-template #gameOver>
+                <button (click)="setCurrentPage((currentPage.buttonData[0].buttonDestinationPage))">Try Again?</button>
+                
+              </ng-template>
+
+              <ng-template #resultPage>
+                <button (click)="setCurrentPage((currentPage.buttonData[0].buttonDestinationPage))">Continue</button>
+                <button (click)="setCurrentPage((currentPage.buttonData[1].buttonDestinationPage))">Go Back</button>
+              </ng-template>
+
+              
+          </div>
+          </div>
+            <!-- <div class="col">
+                <h2>Page List:</h2>
+                <ul>
+                  <li *ngFor="let page of pages">
+                    <h3>{{page.pageTitle}}</h3>
+                          
+                  </li>
+                </ul>
+              </div> -->
+            
+        </div>
+
+        <div class="col">
+          
+            
+        </div>
+
+    </div>
+
+</div>

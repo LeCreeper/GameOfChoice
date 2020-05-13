@@ -1,0 +1,95 @@
+.panel {
+    margin-top: 30px;
+    
+    text-align: center;
+    background-image: url(../../assets/parchmentAbout.jpg);
+    background-position: center;
+    
+    border: 2px solid ;
+    border-radius: 10px;
+
+    
+    padding-bottom: 20px;
+    
+}
+
+h2 {
+    text-transform: capitalize;
+    padding-right: 50px;
+    text-decoration: underline;
+}
+
+p {
+    
+    margin-top: 15px;
+    
+    
+}
+
+p, h2 {
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+.victoryTitle {
+    font-family: "Handlee";
+    font-style: italic;
+}
+
+.deathTitle {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+
+
+.choiceBox {
+    margin-top: 20px;
+    
+    
+    
+}
+
+.choiceBox button{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    border: 2px solid black;
+    border-style: ridge;
+    background-color: rgba(217, 188, 154, 0.623);
+    font-family: 'Handlee', cursive;
+}
+
+.choiceBox button:hover {
+    color: darkred;
+    
+    border: 2px solid darkred;
+    cursor: pointer;
+}
+
+.return {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    transform: translate(0,-50%);
+}
+
+a {
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: darkred;
+    font-weight: 600;
+    
+}
+
